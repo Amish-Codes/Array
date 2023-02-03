@@ -1,5 +1,7 @@
 package Leetcode;
 
+import java.util.Arrays;
+
 public class LC_26 {
     public int removeDuplicates(int[] nums) {
         if (nums.length < 2)
@@ -13,10 +15,11 @@ public class LC_26 {
 		}
        i++;
 	}
+
 	return j + 1;
     }
     public static void main(String[] args) {
-        int[] a = {1,1,2};
+        int[] a = {0,0,1,1,1,2,2,3,3,4};
         LC_26 obj = new LC_26();
         System.out.println(obj.removeDuplicates(a));
     }
